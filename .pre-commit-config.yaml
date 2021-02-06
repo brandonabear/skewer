@@ -1,0 +1,20 @@
+- repo: local
+  hooks:
+    - id: black
+      name: black
+      entry: black
+      language: system
+      types: [python]
+    - id: flake8
+      name: flake8
+      entry: flake8
+      language: system
+      types: [python]
+    - id: end-of-file-fixer
+      name: end-of-file-fixer
+      entry: end-of-file-fixer
+      language: system
+    - id: trailing-whitespace-fixer
+      name: trailing-whitespace-fixer
+      entry: trailing-whitespace-fixer
+      language: system
